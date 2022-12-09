@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Hello, Forms!</h1>
+  <form action="/form-handling-url" method="post">
+    <fieldset>
+      <legend>Add User</legend>
+
+      <div>
+        <label for="FirstName">First Name</label>
+        <input type="text" id="firstname" name="first_name">
+
+      </div>
+      <div>
+        <label for="LastName">Last Name</label>
+        <input type="text" id="LastName" name="Last_Name">
+
+      </div>
+      <div>
+        <label for=" email">Email</label>
+        <input type="email" id="email" name="email_address">
+      </div>
+
+      <div>
+        <label for="role">Role</label>
+        <select id="role" name="user_role_name">
+          <option value="Admin">Admin</option>
+          <option value="Guest">Guest</option>
+          <option value="user">User</option>
+        </select>
+
+      </div>
+      <div>
+        <label for="expiration">Expiration</label>
+        <input type="date" id="expiration" name="Expiration">
+      </div>
+      <div>
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio"></textarea>
+      </div>
+      <button type="submit">Add This Person</button>
+
+
+    </fieldset>
+
+  </form>
+
+</body>
+</html>
